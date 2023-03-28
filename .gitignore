@@ -34,4 +34,8 @@ gradle/
 gradlew
 gradlew.bat
 
+#library
+lib/
+.classpath
+
 .DS_Store
