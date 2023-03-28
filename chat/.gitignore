@@ -27,6 +27,7 @@ build/
 buildSrc/build/
 buildSrc/.gradle/
 buildSrc/out/
+target/
 
 # Gradle files
 .gradle/
