@@ -39,10 +39,18 @@ public class Client {
             @Override
             public void run() {
                 while(socket.isConnected()){
-                    
+                    try {
+                        String messageFromServer = bufferedReader.readLine();
+                        Controller.addLabel(messageFromServer, vBox);
+                    } catch (IOException e){
+                        e.printStackTrace();
+                        System.out.println("Error receiving message from the client");
+                        closeEverything(socket, bufferedReader, bufferedWriter);
+                        break;
+                    }
                 }
             }
-        })
+        }).start();
     }
     public void closeEverything(Socket socket, BufferedReader bufferedReader, BufferedWriter bufferedWriter){
         try {
