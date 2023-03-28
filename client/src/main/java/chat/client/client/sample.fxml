@@ -20,11 +20,11 @@
                     prefHeight="256" prefWidth="418" fitToWidth="true">
             <content>
                 <VBox fx:id="vbox_messages" prefHeight="248"
-                      prefWidth="412"/>
+                prefWidth="412"/>
             </content>
         </ScrollPane>
         <Label layoutX="114" layoutY="26"
-               text="Coding's Messenger">
+        text="Coding's Messenger">
             <font>
                 <Font name="Arial Rounded MT Bold" size="23"></Font>
             </font>
