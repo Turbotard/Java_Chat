@@ -1,4 +1,4 @@
-package chat.java;
+package chat.java.components;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -7,9 +7,8 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
-
 public class ChatInterface extends Application {
-
+    
     private TextArea chatHistory;
     private TextField messageInput;
     private Button sendButton;
