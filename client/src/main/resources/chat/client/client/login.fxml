@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="ap_login" fx:controller="chat.client.login.LoginController"
+<AnchorPane fx:id="ap_login" fx:controller="chat.client.client.LoginController"
             prefHeight="200" prefWidth="300"
             xmlns:fx="http://javafx.com/fxml%22%3E">
     <children>
