@@ -17,6 +17,8 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
+import javafx.scene.control.Label;
+
 
 import java.io.IOException;
 import java.net.Socket;
@@ -34,13 +36,16 @@ public class Controller implements Initializable {
     @FXML
     private ScrollPane sp_main;
 
+    @FXML
+    private Label lbl_username;
+
     private Client client;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         try{
-            client = new Client(new Socket("localhost", 1234));
+            client = new Client(new Socket("89.83.165.185", 1234));
             System.out.println("Connected to server");
         } catch (IOException e){
             e.printStackTrace();
@@ -78,6 +83,9 @@ public class Controller implements Initializable {
                  }
              }
          });
+    }
+    public void setUsername(String username) {
+        lbl_username.setText("User: " + username);
     }
     public static void addLabel(String msgFromServer, VBox vBox){
 

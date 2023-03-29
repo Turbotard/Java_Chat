@@ -37,7 +37,7 @@ public class Client {
     public void receiveMessageFromServer(VBox vBox){
         new Thread(new Runnable() {
             @Override
-            public void run() {
+            public void run () {
                 while(socket.isConnected()){
                     try {
                         String messageFromServer = bufferedReader.readLine();
