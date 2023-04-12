@@ -45,7 +45,7 @@ public class Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         try{
-            client = new Client(new Socket("10.49.33.176", 1234));
+            client = new Client(new Socket("10.49.33.176", 2345));
             System.out.println("Connected to server");
         } catch (IOException e){
             e.printStackTrace();

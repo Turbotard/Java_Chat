@@ -3,7 +3,6 @@ package chat.client.client;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-import chat.client.client.Controller;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -21,7 +20,7 @@ public class LoginController {
 
         if (!username.isEmpty()) {
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/chat/client/client/Main.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("client-information.fxml"));
                 Parent root = loader.load();
                 Controller controller = loader.getController();
                 controller.setUsername(username);
